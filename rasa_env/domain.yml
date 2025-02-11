@@ -1,0 +1,46 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - skills
+  - about_ivan
+  - contact
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_skills:
+  - text: "Ivan is skilled in HTML, CSS, JavaScript, SQL Server, Bootstrap, C#, Git, Python and .NET. He specializes in web development and UX/UI design."
+
+  utter_about:
+  - text: "Ivan is a software development and analysis student passionate about web development. He focuses on creative problem-solving and stays updated with the latest technological trends."
+
+  utter_contact:
+  - text: "You can contact Ivan through:\nEmail: ivanvieraosvaldo@gmail.com\nPhone: +54 911 5989 1260\nLinkedIn: /ivan-viera-57b8932bb\nGitHub: /ivan-viera05"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
