@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I am Developer</title>
+   <title>I am Developer</title>
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,20 +25,20 @@
 
 <body class="bg-color-body">
 
-<header class="container-fluid ">
+<header class="container-fluid">
   <div class="row">
-    <div class="container-fluid col-12 rednetwork">
+    <div class="container-fluid mt-0  pt-0 col-12 rednetwork">
       
-         <a href="https://www.linkedin.com/in/ivan-viera-57b8932bb/" class="col-1 fs-1 navbar-link iconoNavbar"><i class="bi bi-linkedin iconoNavbar"></i></a>  
-        <a href="https://mail.google.com/mail/u/0/#inbox" class="col-1 fs-1 navbar-link iconoNavbar"><i class="bi bi-envelope iconoNavbar"></i></a>
+      <i class="bi bi-linkedin iconoNavbar"><a href="https://www.linkedin.com/in/ivan-viera-57b8932bb/" class="col-3 mx-1 fs-1 navbar-link iconoNavbar"></a></i>  
+      <i class="bi bi-envelope iconoNavbar"><a href="https://mail.google.com/mail/u/0/#inbox" class="col-3 mx-1 fs-1 navbar-link iconoNavbar"></a></i>
         
-        <a href="https://github.com/ivan-viera05" class="col-1 fs-1 navbar-link iconoNavbar"><i class="bi bi-github iconoNavbar"></i></a>
-        <a href="https://wa.me/1234567890" class="col-1 fs-1 navbar-link iconoNavbar"><i class="bi bi-whatsapp iconoNavbar"></i></a>
+        <i class="bi bi-github iconoNavbar"> <a href="https://github.com/ivan-viera05" class="col-3 mx-1 fs-1 navbar-link iconoNavbar"></a></i>
+        <i class="bi bi-whatsapp iconoNavbar"><a href="https://wa.me/1234567890" class="col-3 mx-1 fs-1 navbar-link iconoNavbar"></a></i>
     </div>
     <div class="container-fluid my-5">
       <div class="row my-5">
-        <h1  class="aboutmy fs-1">HELLO WORLD. I am Ivan Viera</h1>
-        <H2 class="aboutmy fs-1">front and desing | Developer</H2>
+        <h1 class="aboutmy fs-1"  data-translate="hello">HELLO WORLD. I am Ivan Viera</h1>
+        <H2 class="aboutmy fs-1" data-translate="role">front and backend | Developer</H2>
 
       </div>
     </div>
@@ -50,9 +50,14 @@
   </div>
 </header>
 
+<!-- Language Toggle Button -->
+<button id="languageToggle" class="language-button mb-3">
+    <i class="bi bi-translate text-primary"></i>
+    <span id="currentLang">EN</span>
+</button>
 
- <a href="#" class="rasa-button" target="_blank">
-    <img src="data:image/png;base64,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" alt="Rasa Bot"/>
+<a href="#" class="rasa-button" target="_blank">
+    <img src="data:image/png;base64,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" alt="Rasa Bot"/>
   </a>
   <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"/>
@@ -72,74 +77,81 @@
 
   <nav class="container-fluid sticky-top">
     <ul class=" d-flex navul  ">
-      <li class=""><a href="#inicio" class="">home</a></li>
-      <li class=""><a href="#acerca" class="">About</a></li>
-      <li class=""><a href="#skills" class="  ">skills</a></li>
-      <li class=""><a href="#servicios" class="  ">services</a></li>
-      <li class=""><a href="#contact" class=" ">Contact</a></li>
-      <li class=""><a href="#game" class=" ">Game</a></li>
-
+      <li class=""><a href="#inicio" class="" data-translate="nav.home">home</a></li>
+      <li class=""><a href="#acerca" class="" data-translate="nav.about">About</a></li>
+      <li class=""><a href="#skills" class="  " data-translate="nav.skills">skills</a></li>
+      <li class=""><a href="#servicios" class="  " data-translate="nav.services">services</a></li>
+      <li class=""><a href="#contact" class=" " data-translate="nav.contact">Contact</a></li>
     </ul>
   </nav>
 
-
-
-  
-
-<h2 class="aboutmy text-center text-light mb-5 mt-5">My Web Projects</h2>
-<div class="projects-container">
-    <!-- Project Card 1 -->
-    <div class="project-card">
-        <div class="project-image">
-            <img src="others/libreria.jpg" alt="Library Project">
-            <div class="project-overlay">
-                <h3>Online Library</h3>
-                <p>A web application for managing books and library resources</p>
-                <div class="project-links">
-                    <a href="https://ivan-viera05.github.io/TrabajoFinalDeIvanViera/" target="_blank" class="project-btn">View Live</a>
-                    <a href="https://github.com/ivan-viera05/TrabajoFinalDeIvanViera" target="_blank" class="project-btn">View Code</a>
+<div class="container-fluid px-4 py-5">
+    <h2 class="text-center text-light mb-5" data-translate="projects.title">My Web Projects</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Project Card 1 - Library -->
+        <div class="col">
+            <div class="card h-100 bg-dark text-light project-card">
+                <div class="project-image">
+                    <img src="others/Elgitano.PNG" class="card-img-top img-fluid object-fit-cover" alt="Library Project">
+                    <div class="project-overlay">
+                        <h3 class="fw-bold mb-3" data-translate="projects.library.title">Online Library</h3>
+                        <p class="mb-4" data-translate="projects.library.description">A web application for managing books and library resources. Built with HTML, CSS, and JavaScript.</p>
+                        <div class="d-flex gap-3">
+                            <a href="https://ivan-viera05.github.io/TrabajoFinalDeIvanViera/" target="_blank" class="btn btn-primary" data-translate="projects.view.live">View Live</a>
+                            <a href="https://github.com/ivan-viera05/TrabajoFinalDeIvanViera" target="_blank" class="btn btn-secondary" data-translate="projects.view.code">View Code</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Project Card 2 -->
-    <div class="project-card">
-        <div class="project-image">
-            <img src="others/logoConsesionaria.jpg" alt="Car Dealership">
-            <div class="project-overlay">
-                <h3>Car Dealership</h3>
-                <p>A modern website for a car dealership with inventory management</p>
-                <div class="project-links">
-                    <a href="https://website6365291.nicepage.io" target="_blank" class="project-btn">View Live</a>
-                    <a href="#" target="_blank" class="project-btn">View Code</a>
+      
+
+        <!-- Project Card 3 - Aesthetic Center -->
+        <div class="col">
+            <div class="card h-100 bg-dark text-light project-card">
+                <div class="project-image">
+                    <img src="others/logoMarEstetica-Photoroom.png" class="card-img-top img-fluid" alt="Aesthetic Center">
+                    <div class="project-overlay">
+                        <h3 class="fw-bold mb-3" data-translate="projects.aesthetic.title">Aesthetic Center</h3>
+                        <p class="mb-4" data-translate="projects.aesthetic.description">A modern website for a beauty and wellness center featuring appointment scheduling, service catalog, and client management...</p>
+                        <div class="d-flex gap-3">
+                            <a href="https://estetica-mar.vercel.app" target="_blank" class="btn btn-primary" data-translate="projects.view.live">View Live</a>
+                            <a href="https://vercel.com/ivan-viera05s-projects/estetica-mar/8eJdVWSjhXwytxYx6yg77h3xsgAG/source" target="_blank" class="btn btn-secondary" data-translate="projects.view.code">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Card 4 - Firefighters -->
+        <div class="col">
+            <div class="card h-100 bg-dark text-light project-card">
+                <div class="project-image">
+                    <img src="others/bomberos.png" class="card-img-top img-fluid" alt="Firefighters Management System">
+                    <div class="project-overlay">
+                        <h3 class="fw-bold mb-3" data-translate="projects.firefighters.title">Firefighters Management System</h3>
+                        <p class="mb-4" data-translate="projects.firefighters.description">A comprehensive management system for San Vicente Volunteer Firefighters. Features include emergency response tracking, personnel management, inventory control, and real-time reporting. Built with C#, SQL Server and .NET technology.</p>
+                        <div class="d-flex gap-3">
+                            <a href="#" target="_blank" class="btn btn-primary" data-translate="projects.view.live">View Demo</a>
+                            <a href="https://github.com/ivan-viera05/bomberos" target="_blank" class="btn btn-secondary" data-translate="projects.view.code">View Code</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<section class="container-fluid my-5">
-  <article class="container col-12 p-5">
-      <div class="row">
-          
-      </div>
-  </article>
-</section>
-
-
-
-
-
-
-
   <section class="container   my-5 rounded " id="acerca">
     <article class="container-fluid ">
       <div class="row">
         <img src="others/myPhoto.png" class="col-sm-12 col-md-12 col-lg-6  imgaboutmy" alt="">
         <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-          <h3 class="col-sm-12 col-md-12 col-lg-12 aboutmy text-light"><span class="subrayado">A</span>bout my</h3>
-          <p class="parrafaboutmy text-light col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-3">
+          <h3 class="col-sm-12 col-md-12 col-lg-12 aboutmy text-light" data-translate="about.title">
+            <span class="subrayados">A</span><span class="about-texto">bout my</span>
+          </h3>
+          <p class="parrafaboutmy text-light col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-3" data-translate="about.description">
             I am a software development and analysis student with a strong passion for web development. I enjoy spending
             time on projects, as they provide the perfect opportunity to learn and grow. I focus on creative
             problem-solving and strive to stay updated with the latest technological trends. Thank you for visiting my
@@ -147,11 +159,10 @@
           </p>
           <div class="col-12 d-flex">
 
-            <button onclick="abrirPDF()" class="button_slide slide_diagonal mx-1">Open cv</button>
+            <button onclick="abrirPDF()" class="button_slide slide_diagonal mx-1" data-translate="about.cv">Open cv</button>
           </div>
         </div>
       </div>
-
     </article>
   </section>
 
@@ -159,7 +170,7 @@
 
     <article class="container col-12   ">
 
-      <h3 class="fs-1 text-light text-center aboutmy"><span class="subrayado">M</span>y skills</h3>
+      <h3 class="fs-1 text-light text-center aboutmy" data-translate="skills.title"><span class="subrayado">M</span>y skills</h3>
 
 
       <div class="languages">
@@ -176,7 +187,7 @@
           <span class="text-lenguage ">CSS</span>
         </div>
         <div class="language">
-          <img src="https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="JavaScript"
+          <img src="others/javascrpt-Photoroom.png" alt="JavaScript"
             class="animate-jump animate-once animate-duration-[2000ms] animate-ease-in-out animate-alternate">
           <span class="text-lenguage ">JavaScript</span>
         </div>
@@ -216,7 +227,7 @@
         <div class="language">
           <img src="https://camunda.com/wp-content/uploads/camunda/blog-images/Social-Media-Favicon.jpg"
             class="animate-jump animate-once animate-duration-[2000ms] animate-ease-in-out animate-alternate" alt="camunda">
-          <span class="text-lenguage ">Camunda</span>
+          <span class="text-lenguage ">Camunda bpmn</span>
         </div>
         <div class="language">
           <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-typescript-3d-icon-download-in-png-blend-fbx-gltf-file-formats--microsoft-logo-angular-language-javascript-static-type-coding-lang-pack-logos-icons-7577992.png"
@@ -243,6 +254,11 @@
             class="animate-jump animate-once animate-duration-[2000ms] animate-ease-in-out animate-alternate" alt="RASA IA">
           <span class="text-lenguage ">RASA IA</span>
         </div>
+        <div class="language">
+          <img src="https://cdn.worldvectorlogo.com/logos/postman.svg"
+            class="animate-jump animate-once animate-duration-[2000ms] animate-ease-in-out animate-alternate" alt="RASA IA">
+          <span class="text-lenguage ">Postman </span>
+        </div>
 
       </div>
 
@@ -253,42 +269,45 @@
 
 
 
-  <section id="servicios" class="overflow-hidden">
-    <article class=" my-5">
+<section id="servicios" class="overflow-hidden">
+    <article class="my-5">
+        <h4 class="col-12 text-center text-light aboutmy" data-translate="services.title">
+            <span class="subrayados">S</span><span class="servicios-texto">ERVICES</span>
+        </h4>
+        <div class="row d-flex justify-content-center">
+            <!-- Developer Service -->
+            <div class="col-4 caja rounded mt-3 p-3">
+                <img src="others/desarrollo-web.png" class="iconservices" alt="">
+                <h4 class="col-12 p-3" data-translate="services.developer.title">Developer</h4>
+                <p class="col-12 p-3 parrafaboutmy" data-translate="services.developer.description">
+                    As a developer, I can create innovative solutions using a variety of technologies. From application development to process automation, my experience allows me to tackle a wide range of technological challenges with efficiency and quality.
+                </p>
+            </div>
 
-      <h4 class=" col-12 text-center  text-light aboutmy">SERVICES</h4>
-      <div class="row d-flex justify-content-center">
-        <div class="col-4 caja rounded  mt-3 p-3">
-          <img src="others/desarrollo-web.png" class="iconservices " alt="">
-          <h4 class="col-12 p-3">Developer</h4>
-          <p class="col-12 p-3 parrafaboutmy">As a developer, I can create innovative solutions using a variety of
-            technologies. From application development to process automation, my experience allows me to tackle a wide
-            range of technological challenges with efficiency and quality.</p>
-        </div>
+            <!-- UX/UI Design Service -->
+            <div class="col-4 caja rounded mt-3 p-3">
+                <img src="others/interfaz-de-usuario.png" class="iconservices" alt="">
+                <h4 class="col-12 p-3" data-translate="services.design.title">Design UX/UI</h4>
+                <p class="col-12 p-3 parrafaboutmy" data-translate="services.design.description">
+                    My focus is on creating intuitive and engaging digital experiences. From user interface design to user research, my experience allows me to tackle a wide range of design challenges with the goal of enhancing usability and user satisfaction.
+                </p>
+            </div>
 
-        <div class="col-4 caja rounded  mt-3 p-3 ">
-          <img src="others/interfaz-de-usuario.png" class="iconservices " alt="">
-          <h4 class="col-12  p-3">Design UX/UI</h4>
-          <p class="col-12 p-3 parrafaboutmy">As a UX designer, my focus is on creating intuitive and engaging digital
-            experiences. From user interface design to user research, my experience allows me to tackle a wide range of
-            design challenges with the goal of enhancing usability and user satisfaction.</p>
+            <!-- Web Developer Service -->
+            <div class="col-4 caja rounded mt-3 p-3">
+                <img src="others/developer-web.png" class="iconservices" alt="">
+                <h4 class="col-12 p-3" data-translate="services.web.title">Web developer</h4>
+                <p class="col-12 p-3 parrafaboutmy" data-translate="services.web.description">
+                    As a web developer, I have the ability to create efficient and appealing websites and web applications. From design to implementation, my experience enables me to tackle a wide range of challenges in web development, utilizing modern technologies to deliver high-quality and functional results.
+                </p>
+            </div>
         </div>
-
-        <div class="col-4 caja rounded  mt-3 p-3 ">
-          <img src="others/developer-web.png" class="iconservices " alt="">
-          <h4 class="col-12 p-3">Web developer</h4>
-          <p class="col-12 p-3 parrafaboutmy">
-            As a web developer, I have the ability to create efficient and appealing websites and web applications. From
-            design to implementation, my experience enables me to tackle a wide range of challenges in web development,
-            utilizing modern technologies to deliver high-quality and functional results.</p>
-        </div>
-      </div>
     </article>
-  </section>
+</section>
 
 
-  <section class="container-fluid" id="contact">
-    <div class="background">
+  <section class="container-fluid mt-5" id="contact">
+    <div class="background container-fluid">
       <div class="container">
         <div class="screen">
           <div class="screen-header">
@@ -306,11 +325,12 @@
           <div class="screen-body">
             <div class="screen-body-item left">
               <div class="app-title aboutmy">
-                <span>CONTACT</span>
-                <span>US</span>
+                <h4 class="col-12  text-light" data-translate="contact.title">
+                    <span class="subrayados">C</span><span class="contact-texto">ONTACT US</span>
+                </h4>
               </div>
               <div class="app-contact my-5">
-                <h5 class="fs-6 aboutmy">CONTACT INFO : +54 911 5989 1260</h5>
+                <h5 class="fs-6 aboutmy" data-translate="contact.info">CONTACT INFO : +54 911 5989 1260</h5>
               </div>
               <div class="social-icons d-flex">
                 <a href="https://www.instagram.com/ivi_viera_/"><svg xmlns="http://www.w3.org/2000/svg" width="30"
@@ -322,7 +342,7 @@
                     xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook"
                     viewBox="0 0 16 16">
                     <path
-                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.064 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
                   </svg></a>
                 <a href="https://github.com/ivan-viera05"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" 
                     fill="currentColor" class="bi bi-github pepe" viewBox="0 0 16 16">
@@ -347,19 +367,19 @@
             <div class="screen-body-item">
               <form class="app-form" action="https://formspree.io/f/mayrarek" method="post">
                 <div class="app-form-group">
-                  <input class="app-form-control" type="text" maxlength="50" placeholder="NAME" required>
+                  <input class="app-form-control" type="text" maxlength="50" data-translate="contact.name" placeholder="NAME" required>
                 </div>
                 <div class="app-form-group ">
-                  <input class="app-form-control" type="EMAIL" placeholder="EMAIL" required>
+                  <input class="app-form-control" type="EMAIL" data-translate="contact.email" placeholder="EMAIL" required>
                 </div>
                 <div class="app-form-group">
-                  <input class="app-form-control" type="text " name="message" placeholder="CONTACT NUM">
+                  <input class="app-form-control" type="text " name="message" data-translate="contact.number" placeholder="CONTACT NUM">
                 </div>
                 <div class="app-form-group message">
-                  <input class="app-form-control" type="text" name="message" maxlength="500" placeholder="MESSAGE">
+                  <input class="app-form-control" type="text" name="message" maxlength="500" data-translate="contact.message" placeholder="MESSAGE">
                 </div>
                 <div class="app-form-group buttons">
-                  <button class="app-form-button" type="submit">SEND</button>
+                  <button class="app-form-button" type="submit" data-translate="contact.send">SEND</button>
                 </div>
               </form>
             </div>
@@ -369,14 +389,14 @@
     </div>
   </section>
 
-
-  <div class="game-over text-light mb-4 fs-1">
-    <h5>GAME OVER</h5>
-  </div>
-  <section id="game">
+<!-- Game section -->
+<section id="game" class="mt-5">
+    <div class="game-over text-light mb-4 fs-1">
+        <h5 data-translate="game.over">GAME OVER</h5>
+    </div>
     <div class="btn d-flex justify-content-center">
-      <button id="miboton" class="boton-estilizado" onclick="this.blur()">Start game</button>
-      <button id="reiniciarBoton" class="boton-estilizado" onclick="this.blur()">Restart</button>
+        <button id="miboton" class="boton-estilizado" onclick="this.blur()" data-translate="game.start">Start game</button>
+        <button id="reiniciarBoton" class="boton-estilizado" onclick="this.blur()" data-translate="game.restart">Restart</button>
     </div>
     <div class="contenedor">
       <div class="suelo"></div>
@@ -386,10 +406,10 @@
         <h5 class=" fs-2 score">0</h5>
       </div>
     </div>
-  </section>
+</section>
 
-  <footer class="footer backgroundnew ">
-
+  <!-- Footer -->
+  <footer class="footer backgroundnew">
     <ul class="social-icon ">
       <li class="social-icon__item"><a class="social-icon__link" href="#">
           <ion-icon name="logo-facebook"></ion-icon>
@@ -406,16 +426,17 @@
     </ul>
 
     <ul class="menu">
-      <li class="menu__item"><a class="menu__link" href="#inicio">Home</a></li>
-      <li class="menu__item"><a class="menu__link" href="#acerca">About</a></li>
-      <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
-      <li class="menu__item"><a class="menu__link" href="#servicios">Services</a></li>
-      <li class="menu__item"><a class="menu__link" href="#contacto">Contact</a></li>
-      <p class="col-12 text-center">&copy;2024 Ivan Viera | All Rights Reserved</p>
+      <li class="menu__item"><a class="menu__link" href="#inicio" data-translate="nav.home">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#acerca" data-translate="nav.about">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#skills" data-translate="nav.skills">Skills</a></li>
+      <li class="menu__item"><a class="menu__link" href="#servicios" data-translate="nav.services">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#contacto" data-translate="nav.contact">Contact</a></li>
+      <p class="col-12 text-center" data-translate="footer.rights">&copy;2025 Ivan Viera | All Rights Reserved</p>
   </footer>
 
 
   <script src="js/code.js"></script>
+  <script src="js/translate.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
